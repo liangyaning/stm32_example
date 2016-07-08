@@ -1,26 +1,4 @@
-/*******************************************************************************
-        (c) COPYRIGHT 2010-2018 by Efficient Systems, Inc.    
-                          All rights reserved.
-    
-       This software is confidential and proprietary to Efficient 
-     Systems, Inc.  No part of this software may be reproduced,    
-     stored, transmitted, disclosed or used in any form or by any means
-     other than as expressly provided by the written license agreement    
-     between Efficient Systems and its licensee.
- FileName    : stm32f10x_it.c
- Author      : ranwei
- Version     : 
- Date        : 2016/3/10 15:18:41:980
- Description : 
- Others      : 
 
- History      :
-  1.Date         -- 2016/3/10 15:18:41:980
-    Author       -- ranwei
-    Modification -- Created file
-
-*******************************************************************************/
-    
 #define  STM32F10X_IT_GLOBAL
 
 /* includes-------------------------------------------------------------------*/
@@ -195,4 +173,3 @@ void USART3_IRQHandler(void)
 }
 */
     
-/**************** (C) COPYRIGHT 2010-2018 Efficient *****END OF FILE***********/

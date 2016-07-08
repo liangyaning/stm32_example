@@ -1,25 +1,3 @@
-/*******************************************************************************
-        (c) COPYRIGHT 2010-2018 by Efficient Systems, Inc.    
-                          All rights reserved.
-    
-       This software is confidential and proprietary to Efficient 
-     Systems, Inc.  No part of this software may be reproduced,    
-     stored, transmitted, disclosed or used in any form or by any means
-     other than as expressly provided by the written license agreement    
-     between Efficient Systems and its licensee.
- FileName    : main.h
- Author      : ranwei
- Version     : 
- Date        : 2016/3/11 15:13:19:743
- Description : 
- Others      : 
-
- History      :
-  1.Date         -- 2016/3/11 15:13:19:743
-    Author       -- ranwei
-    Modification -- Created file
-
-*******************************************************************************/
 #ifndef __MAIN_H__
 #define __MAIN_H__
 
@@ -35,10 +13,24 @@ extern "C"{
 
 #define SERIAL_DEBUG
 
+// 调试信息打印，同时打印文件名和行号
+#define __DEBUG__
+#ifdef __DEBUG__
+#define DEBUG(format,...) printf("File: "__FILE__", Line: %05d: "format"\n", __LINE__, ##__VA_ARGS__)
+#else
+#define DEBUG(format,...)
+#endif
+
+// 调试信息打印，不打印文件名和行号
+#define MY_DEBUG
+#ifdef MY_DEBUG
+#define mprint(format,...) printf(format, ##__VA_ARGS__)
+#else
+#define mprint(format,...)
+#endif
 
 #ifdef __cplusplus
 }
 #endif /* __cplusplus */
 
 #endif /* __MAIN_H__ */
-/**************** (C) COPYRIGHT 2010-2018 Efficient *****END OF FILE***********/

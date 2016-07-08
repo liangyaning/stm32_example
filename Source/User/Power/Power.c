@@ -1,25 +1,3 @@
-/*******************************************************************************
-        (c) COPYRIGHT 2010-2018 by Efficient Systems, Inc.    
-                          All rights reserved.
-    
-       This software is confidential and proprietary to Efficient 
-     Systems, Inc.  No part of this software may be reproduced,    
-     stored, transmitted, disclosed or used in any form or by any means
-     other than as expressly provided by the written license agreement    
-     between Efficient Systems and its licensee.
- FileName    : Power.c
- Author      : ranwei
- Version     : 
- Date        : 2016/3/2 16:56:56:48
- Description : 
- Others      : 
-
- History      :
-  1.Date         -- 2016/3/2 16:56:56:48
-    Author       -- ranwei
-    Modification -- Created file
-
-*******************************************************************************/
     
 #define  POWER_GLOBAL
 
@@ -64,5 +42,3 @@ void Power_Off(void)
 }
 
 
-    
-/**************** (C) COPYRIGHT 2010-2018 Efficient *****END OF FILE***********/

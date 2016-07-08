@@ -1,20 +1,4 @@
-/*******************************************************************************
-        (c) COPYRIGHT 2010-2018 by Efficient Systems, Inc.    
-                          All rights reserved.
-    
-       This software is confidential and proprietary to Efficient 
-     Systems, Inc.  No part of this software may be reproduced,    
-     stored, transmitted, disclosed or used in any form or by any means
-     other than as expressly provided by the written license agreement    
-     between Efficient Systems and its licensee.
- FileName    : main.c
- Author      : ranwei
- Version     : 
- Date        : 2016/1/25 19:12:14:221
- Description : 
- Others      : 
-*******************************************************************************/
-    
+
 #define  MAIN_GLOBAL
 #define SERIAL_DEBUG
 
@@ -45,9 +29,10 @@ int main(void)
 
 #ifdef SERIAL_DEBUG
     DebugComPort_Init();
-    printf("Remote Control start ...\n\n");
-    printf("%s\n", g_rc_version);
-    printf("\n------------------------\n");
+
+    mprint("\n÷–Œƒœ‘ æRemote Control start ...\n\n");
+    DEBUG("%s\n", g_rc_version);
+    mprint("------------------------\n");
 #endif
     
     while(1)
@@ -55,5 +40,3 @@ int main(void)
 
     }
 }
-    
-/**************** (C) COPYRIGHT 2010-2018 Efficient *****END OF FILE***********/
