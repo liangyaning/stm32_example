@@ -30,7 +30,7 @@ int main(void)
 #ifdef SERIAL_DEBUG
     DebugComPort_Init();
 
-    mprint("\n÷–Œƒœ‘ æRemote Control start ...\n\n");
+    mprint("\n‰∏≠Êñá‰π±Á†ÅRemote Control start ...\n\n");
     DEBUG("%s\n", g_rc_version);
     mprint("------------------------\n");
 #endif
